@@ -1,2 +1,55 @@
 1) aws intro
-   1.1) 
+   1.1) service
+        what is aws
+            ec2
+            ebs
+            efs
+            s3
+            vpc
+            autosacling groups
+            acm (AWS Certificate Manager)
+            rout53
+            IAM
+            ecr
+            eks
+            aws cli
+    1.2) application types
+         1) standalone
+         2) web apps
+              static
+              dynamic
+              mobile apps
+    
+        apps running out of cpu     --> apps will hang
+        apps running out of memory  --> apps will be killed
+
+    1.3) benfits or buissiness requiremwnts
+        `----------------------------------
+        1) high avalability
+        2) falut tolerance
+        3) scalability
+        4) elasticity`
+    1.4) what is cloud service
+         what is cloud computing
+---------------------------------------------------------------------------------------------------------------
+2) 
+  2.1) types cloud computing
+        public
+        private
+        hybrid
+        multi cloud
+  2.2) cloud service models
+        1) on prem 
+        2) iaas
+        3) pass
+        4) saas
+  2.3) virualization
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
