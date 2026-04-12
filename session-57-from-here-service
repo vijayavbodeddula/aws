@@ -1,2 +1,5 @@
 region : A Region is a geographical location in the cloud where data centers are located, and it is 
          isolated from other regions for fault tolerance and high availability.
+
+
+availability zones: 
