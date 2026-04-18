@@ -88,3 +88,20 @@ Used for infrequently accessed data
     Old generation
     Low performance
     Rarely used now ❌
+
+    | Type     | Category | Use Case                      |
+    | -------- | -------- | ----------------------------- |
+    | gp3      | SSD      | General purpose (best choice) |
+    | gp2      | SSD      | Older general purpose         |
+    | io1/io2  | SSD      | High performance DB           |
+    | st1      | HDD      | Big data, logs                |
+    | sc1      | HDD      | Cold storage                  |
+    | Magnetic | HDD      | Legacy                        |
+
+
+creation of EBS
+---------------
+volume Type
+size
+Availability Zone
+tags
