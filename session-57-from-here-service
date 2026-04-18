@@ -8,6 +8,8 @@ local Zones: Local Zones are extensions of AWS regions that place compute, stora
 
 wavelength Zones: Wavelength Zones are AWS infrastructure deployments inside telecom (5G) networks to provide ultra-low latency.
 
+Edge locations : are AWS data centers placed close to end users to cache and deliver content with low latency.
+
 how to select an availability zone
 ----------------------------------
   1) the location which is near to the custpmers
@@ -15,4 +17,18 @@ how to select an availability zone
   3) Latancy
   4) security and compliance
   5) service availability
+
+
+ec2
+----
+Amazon EC2 (Elastic Compute Cloud) is a web service in AWS that provides scalable virtual machines (instances) to run applications in the cloud.
+
+scalable
+--------
+vertical scaling ---> this can be done by only and here we have down time
+                      1) manual
+                         here we have down time
+horizontal scaling ---> this can be done by only here we have not down time
+                        1) manual
+                        2) automation
 
