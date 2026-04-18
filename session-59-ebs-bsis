@@ -17,6 +17,9 @@ type of storage services in aws
 
 what is EBS
     Amazon EBS (Elastic Block Store) is a block storage service in AWS used to provide persistent storage for EC2 instances.
+        1) here the dat will maintain in multiple blocks
+        2) connot acces from the multiple server can mount to single server
+        3) better for updating the data because while updating that only one block will be updated
     EBS = Hard disk for EC2
         Attached to EC2 instance
         Stores OS, applications, and data
@@ -25,9 +28,63 @@ what is EBS
         gp3/gp2 → General purpose
         io1/io2 → High performance
         magnetic 
+    root volume
+    ------------
+        by default a volume is Attached to the ec2 which we call it as root volume it  is helpful for  the booting the os
+        and we can attach more than 1 ebs to an ec2 which is mutli ebs attach
+    
+for list out how many ebs volumes connected  to know it use below cmd
+    cmd : lsblk
+to know the ebs connected to which path use below cmd
+    cmd: df -h
 
-root volume
+types of EBS
 ------------
-    by default a volume is Attached to the ec2 which we call it as root volume it  is helpful for  the booting the os
-    and we can attach more than 1 ebc to an ec2 which is mutli ebs attach
+    general purpose (gp2)
+    general purpose (gp3)
+    privisioned IOPs (IO1)
+    privisioned IOPs (IO2)
+    cold HDD 
+    throughput optimized HDD
+    magnetic standard
 
+🔹 1) General Purpose SSD
+    ✅ gp2
+    Balanced price & performance
+    Older generation
+    ✅ gp3 (Recommended)
+    Better performance than gp2
+    Lower cost 💰
+    You can configure IOPS & throughput separately
+
+    👉 🔥 Most commonly used
+
+🔹 2) Provisioned IOPS SSD
+    ✅ io1
+    High performance SSD
+    Used for critical applications
+    ✅ io2
+    Higher durability & performance than io1
+    Used for mission-critical databases
+
+    👉 Example:
+
+    Banking systems
+High-end databases
+🔹 3) HDD (Hard Disk Drives)
+    ✅ st1 (Throughput Optimized HDD)
+    Good for large data workloads
+    High throughput
+
+    👉 Use cases:
+
+    Big data
+    Logs processing
+    ✅ sc1 (Cold HDD)
+    Lowest cost 💰
+Used for infrequently accessed data
+🔹 4) Magnetic (Standard)
+    ✅ Standard (Magnetic)
+    Old generation
+    Low performance
+    Rarely used now ❌
