@@ -89,6 +89,9 @@ types of EBS
     Low performance
     Rarely used now ❌
 
+diefference 
+------------
+
     | Type     | Category | Use Case                      |
     | -------- | -------- | ----------------------------- |
     | gp3      | SSD      | General purpose (best choice) |
