@@ -1,0 +1,26 @@
+ec2 supports two storages
+------------------------
+    1) EBS
+    2) instance storage (Local storage it is temperory)
+
+type of storage services in aws
+--------------------------------
+    1) EBS
+    2) EFS
+    3) S3
+what is EBS
+    Amazon EBS (Elastic Block Store) is a block storage service in AWS used to provide persistent storage for EC2 instances.
+    EBS = Hard disk for EC2
+        Attached to EC2 instance
+        Stores OS, applications, and data
+        Data is not lost even if instance stops
+    types:
+        gp3/gp2 → General purpose
+        io1/io2 → High performance
+        magnetic 
+
+root volume
+------------
+    by default a volume is Attached to the ec2 which we call it as root volume it  is helpful for  the booting the os
+    and we can attach more than 1 ebc to an ec2 which is mutli ebs attach
+
