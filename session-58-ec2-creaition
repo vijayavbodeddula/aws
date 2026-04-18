@@ -24,4 +24,19 @@ EBS: configuration:
             OS (root volume)
             Application data
             Logs / databases
-for ping command to use we have to enambele ALLICMP protocal in SG>
+
+additional details:
+        userdata
+        termination protection
+        change shutdown protection
+        change stop protection
+
+
+other than ec2:
+----------------
+for ping command to use we have to enambele ALLICMP protocal in SG
+which command is used for the a specifc  port is opened or not  
+        telent ip 22
+                connection not for
+                conntion refused means (port not opened)
+                connection time out ( port is opened but no sevice is n=running in it )
