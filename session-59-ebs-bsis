@@ -20,6 +20,7 @@ what is EBS
         1) here the dat will maintain in multiple blocks
         2) connot acces from the multiple server can mount to single server
         3) better for updating the data because while updating that only one block will be updated
+        4) its a zone level service means cant be acceess in another zone
     EBS = Hard disk for EC2
         Attached to EC2 instance
         Stores OS, applications, and data
@@ -28,7 +29,7 @@ what is EBS
         gp3/gp2 → General purpose
         io1/io2 → High performance
         magnetic 
-    root volume
+    root volume  (/dev/sdf)
     ------------
         by default a volume is Attached to the ec2 which we call it as root volume it  is helpful for  the booting the os
         and we can attach more than 1 ebs to an ec2 which is mutli ebs attach
@@ -102,9 +103,17 @@ diefference
     | Magnetic | HDD      | Legacy                        |
 
 
-creation of EBS
----------------
-volume Type
-size
-Availability Zone
-tags
+creation of EBS and attcaching to it a ec2
+-----------------------------------------
+these fields needs to  fille
+    volume Type
+    size
+    Availability Zone
+    tags
+
+
+after creation
+--------------
+    select the ebs volume ---------> actions ---> attach to instance ---> 
+      1) provide instance
+      2) device name /dev/xvdf    
