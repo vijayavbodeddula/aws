@@ -124,3 +124,30 @@ instane tupe and family
         vCPU
         RAM
         Network performance
+
+HOW EC2 CAN BE CHARGED
+---------------------
+    PURCHASING OPTION
+    INSTANCE TYPE AND FAMILY
+    EBS SIZE
+    AMI TYPE
+    DATA TRENSFER
+    REGION
+
+
+
+ROCESS OF CREATING THE EC2 
+---------------------------
+
+1) TAGS
+    NAME : EC2
+2) AMI (REDHAT, UBUNTU, AMAZON LINUX)
+   1) MY AMI'S
+   2) COMMUNNITY AMI'S
+   3) MARKET PLACE AMI'S
+3) instance type (t3.micro)
+4) VPC
+   a) vpc
+   b) subnet
+   c) security group\
+5) EBs
