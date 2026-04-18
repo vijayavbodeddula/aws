@@ -32,3 +32,95 @@ horizontal scaling ---> Adding or removing multiple instances to handle load. th
                         1) manual
                         2) auto scaling
 
+
+ec2 purchansing optinons
+------------------------
+1) On-Demand Instances
+        ✅ Definition:
+
+        Pay for compute capacity per second/hour with no long-term commitment.
+
+        ✅ Use Cases:
+            Testing
+            Short-term workloads
+            Unpredictable traffic
+        ✅ Pros:
+            Flexible
+        No upfront cost
+        ❌ Cons:
+            Expensive compared to others
+
+2) Reserved Instances (RI)
+✅ Definition:
+
+        Reserve capacity for 1 or 3 years to get discounted pricing.
+
+        ✅ Use Cases:
+        Long-running applications
+        Stable workloads
+        ✅ Pros:
+        Up to ~70% cheaper
+        ❌ Cons:
+        Less flexibility
+        Commitment required
+3) Spot Instances
+
+✅ Definition:
+
+        Use unused AWS capacity at very low cost (up to 90% discount).
+
+        ✅ Use Cases:
+        Batch jobs
+        Data processing
+        CI/CD pipelines
+        ✅ Pros:
+        Very cheap 💰
+        ❌ Cons:
+        Can be terminated anytime ⚠️
+4) Dedicated Instances / Hosts
+✅ Definition:
+
+        Physical servers dedicated only to your account.
+
+        ✅ Use Cases:
+        Compliance requirements
+        Licensing constraints
+        ✅ Pros:
+        Full isolation
+        ❌ Cons:
+        Very expensive
+        🔥 Which is Commonly Used?
+
+        👉 Most commonly used in real-time:
+
+✅ On-Demand → Default choice (most common)
+✅ Reserved → For production long-term apps
+✅ Spot → For cost optimization
+
+👉 ❌ Dedicated → Rare (only special cases)
+
+🔥 Real-Time Usage Pattern:
+Dev/Test → On-Demand
+Production → Reserved
+Batch jobs → Spot
+✅ Interview One-Liner:
+
+EC2 offers On-Demand, Reserved, Spot, and Dedicated instances, where On-Demand is most commonly used for flexibility, Reserved for cost savings in long-term workloads, and Spot for low-cost non-critical workloads.
+
+
+
+instane tupe and family
+-----------------------
+    Instance family: is a category of EC2 instances designed for a specific type of workload.
+            | Family            | Example | Use Case        |
+            | ----------------- | ------- | --------------- |
+            | General Purpose   | t3, m5  | Balanced apps   |
+            | Compute Optimized | c5      | CPU-heavy apps  |
+            | Memory Optimized  | r5      | Databases       |
+            | Storage Optimized | i3      | High disk usage |
+            | GPU               | p3      | AI/ML           |
+    Instance type is the specific size/configuration within a family.
+    👉 It defines:
+        vCPU
+        RAM
+        Network performance
