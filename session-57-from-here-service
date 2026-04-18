@@ -2,4 +2,16 @@ region : A Region is a geographical location in the cloud where data centers are
          isolated from other regions for fault tolerance and high availability.
 
 
-availability zones: 
+availability zones: An Availability Zone is a single, isolated data center (or a group of closely located data centers) within a region.
+local Zones: Local Zones are extensions of AWS regions that place compute, storage, and other services closer to end users.
+
+wavwlength Zones: Wavelength Zones are AWS infrastructure deployments inside telecom (5G) networks to provide ultra-low latency.
+
+how to select an availability zone
+----------------------------------
+  1) the location which is near to the custpmers
+  2) pricing
+  3) Latancy
+  4) security and compliance
+  5) service availability
+
