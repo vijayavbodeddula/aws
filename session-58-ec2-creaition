@@ -10,3 +10,6 @@ ami:  AMI (Amazon Machine Image) is a template used to launch EC2 instances.
 instance type and family:
     --> instance family is a category of EC2 instances designed for a specific type of workload.
     --> instance type  is the specific size/configuration within a family.
+key-pairs: A key pair is a set of two keys (public key and private key) used to securely connect to an EC2 instance via SSH.
+        1) public key  (which resides inside the .ssh/aitherized1_keys)
+        2) private key (pem file)
