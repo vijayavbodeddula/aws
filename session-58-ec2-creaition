@@ -1,0 +1,12 @@
+ec2:
+
+tags :   Tags are key-value pairs used to identify, organize, and manage AWS resources.
+ami:  AMI (Amazon Machine Image) is a template used to launch EC2 instances.
+        types of AMI's
+        1) community ami's
+        2) marketplace AMI's
+        3) My AMi's
+
+instance type and family:
+    --> instance family is a category of EC2 instances designed for a specific type of workload.
+    --> instance type  is the specific size/configuration within a family.
