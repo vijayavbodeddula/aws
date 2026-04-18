@@ -2,12 +2,19 @@ ec2 supports two storages
 ------------------------
     1) EBS
     2) instance storage (Local storage it is temperory)
+types of storages
+-----------------
+    1) Block storage
+    2) file storage
+    3) adobject storage
 
 type of storage services in aws
 --------------------------------
     1) EBS
     2) EFS
     3) S3
+
+
 what is EBS
     Amazon EBS (Elastic Block Store) is a block storage service in AWS used to provide persistent storage for EC2 instances.
     EBS = Hard disk for EC2
