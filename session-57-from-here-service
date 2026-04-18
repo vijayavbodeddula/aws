@@ -23,12 +23,12 @@ ec2
 ----
 Amazon EC2 (Elastic Compute Cloud) is a web service in AWS that provides scalable virtual machines (instances) to run applications in the cloud.
 
-scalable
+scaling  --> Scaling is the process of increasing or decreasing resources to handle application load
 --------
-vertical scaling ---> this can be done by only and here we have down time
+vertical scaling ---> Increasing or decreasing the size of a single instance (CPU, RAM). this can be done by only and here we have down time
                       1) manual
                          here we have down time
-horizontal scaling ---> this can be done by only here we have not down time
+horizontal scaling ---> Adding or removing multiple instances to handle load. this can be done by only here we have not down time
                         1) manual
-                        2) automation
+                        2) auto scaling
 
