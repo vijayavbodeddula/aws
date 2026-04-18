@@ -13,3 +13,15 @@ instance type and family:
 key-pairs: A key pair is a set of two keys (public key and private key) used to securely connect to an EC2 instance via SSH.
         1) public key  (which resides inside the home user directory for ubuntu it is -----> /home/ubuntu/.ssh/autherizedd_file)
         2) private key (pem file)
+Networking settings:
+        1) network : Network refers to the VPC where your EC2 instance will be created.
+        2) subnet: Subnet is a smaller network inside a VPC.
+        3) security Group: Security Group acts as a virtual firewall for EC2 instances.
+EBS: configuration:
+        BS is block storage used as a disk for EC2 instances.
+
+        👉 It is used for:
+            OS (root volume)
+            Application data
+            Logs / databases
+for ping command to use we have to enambele ALLICMP protocal in SG>
