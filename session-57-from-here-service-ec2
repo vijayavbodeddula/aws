@@ -38,7 +38,7 @@ ec2 purchansing optinons
 1) On-Demand Instances
         ✅ Definition:
 
-        Pay for compute capacity per second/hour with no long-term commitment.
+        Pay for compute capacity per second/hour with no long-term commitment. we terminate or Provisioned when we want. so it most felxible type.
 
         ✅ Use Cases:
             Testing
@@ -53,7 +53,7 @@ ec2 purchansing optinons
 2) Reserved Instances (RI)
 ✅ Definition:
 
-        Reserve capacity for 1 or 3 years to get discounted pricing.
+        Reserve capacity for 1 or 3 years to get discounted pricing. uy this type of instance, bwe are responsible for the entire price ragardless how often we use it.
 
         ✅ Use Cases:
         Long-running applications
