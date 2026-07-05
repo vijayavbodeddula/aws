@@ -109,7 +109,7 @@ EC2 offers On-Demand, Reserved, Spot, and Dedicated instances, where On-Demand i
 
 
 
-instane tupe and family
+instane type and family
 -----------------------
     Instance family: is a category of EC2 instances designed for a specific type of workload.
             | Family            | Example | Use Case        |
