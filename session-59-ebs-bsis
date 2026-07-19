@@ -156,3 +156,36 @@ cmds:
         After editing /etc/fstab, run this command to test the configuration without rebooting.
         If there is no output, the configuration is usually correct.
         If there is an error, fix /etc/fstab before rebooting.
+
+        1. Attach EBS Volume in AWS Console
+             │
+             ▼
+        2. lsblk
+        (Find the device name)
+                    │
+                    ▼
+        3. mkfs.ext4 /dev/nvme1n1
+        (Create filesystem)
+                    │
+                    ▼
+        4. mkdir -p /var/lib/jenkins
+                    │
+                    ▼
+        5. mount /dev/nvme1n1 /var/lib/jenkins
+                    │
+                    ▼
+        6. blkid
+        (Get the UUID)
+                    │
+                    ▼
+        7. Add UUID entry to /etc/fstab
+                    │
+                    ▼
+        8. mount -a
+        (Validate fstab)
+                    │
+                    ▼
+        9. Reboot
+                    │
+                    ▼
+        10. EBS automatically mounts to /var/lib/jenkins
