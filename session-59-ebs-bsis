@@ -117,3 +117,42 @@ after creation
     select the ebs volume ---------> actions ---> attach to instance ---> 
       1) provide instance
       2) device name /dev/xvdf    
+
+
+cmds:
+-----
+1) lsblk
+    Lists all block storage devices (disks and partitions) attached to the EC2 instance.
+    NAME         SIZE TYPE MOUNTPOINT
+        nvme0n1       10G disk
+        ├─nvme0n1p1  8.9G part /
+        nvme1n1       20G disk
+2) df -kh
+    Displays all mounted filesystems along with their disk usage
+    Filesystem      Size Used Avail Mounted on
+    /dev/nvme0n1p1  9G   3G    6G   /
+    /dev/nvme1n1   20G   1G   19G   /var/lib/jenkins
+3) sudo mkfs.ext4 /dev/dev-name
+    Creates an ext4 filesystem on the new EBS volume.
+    Why?
+        A newly attached EBS volume is just raw block storage. Linux cannot store files on it until a filesystem is created.
+        Think of it like buying a new hard drive—you must format it before use.
+        Warning: This command erases all existing data on the volume.
+4) sudo mount /dev/dev-name /path
+    Mounts the EBS volume to a directory.
+5) sudo vi /etc/fstab 
+    Makes the mount permanent across reboots.   
+    (here add an entry to mount ec2 with ebs when its gets rebooted)
+    echo 'UUID=d44e9432-7aff-4e4f-afb6-a728b24963b0 /var/lib/jenkins ext4 defaults,nofail 0 2' | sudo tee -a /etc/fstab
+6) sudo umount /path
+    Unmounts the filesystem.
+    After unmounting:
+        The EBS volume is no longer accessible through /var/lib/jenkins.
+        The directory becomes a normal directory again.
+        Use this before detaching an EBS volume from an EC2 instance.
+7) sudo mount -a
+    Mounts all filesystems listed in /etc/fstab.
+    Why use it?
+        After editing /etc/fstab, run this command to test the configuration without rebooting.
+        If there is no output, the configuration is usually correct.
+        If there is an error, fix /etc/fstab before rebooting.
