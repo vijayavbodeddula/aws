@@ -279,7 +279,7 @@ EBS Volume
 
 # CREATIONG SNAPSHOT FROM EXISTING EBS
 
-      ![AWS Snapshot](screenshots/snapchot.png)
+![AWS Snapshot](screenshots/snapchot.png)
 
             1) provide the snapchat name
             2) description
