@@ -286,3 +286,6 @@ EBS Volume
             3) volume (from which ebs snapshot need to create)
             3) tags
             ```
+# CREATIONG EBS FROM EXISTING SNAPSHOT
+
+![AWS Snapshot](screenshots/creating-ebs-from-snapshot-moving-the-snapshot-from-one-zone-to-another-or-region.png)
