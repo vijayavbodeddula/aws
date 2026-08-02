@@ -7,4 +7,4 @@ Connection refused	        The connection reached the server, but nothing is lis
 AWS Snapshot
     An AWS Snapshot is a backup of an Amazon EBS (Elastic Block Store) volume.
     It allows you to restore data or create new EBS volumes from the saved state.
-    ![alt text](screenshots/snapshot.png)
+    ![alt text](screenshots/snapchot.png)
