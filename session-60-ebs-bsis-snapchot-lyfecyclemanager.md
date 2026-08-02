@@ -293,3 +293,5 @@ EBS Volume
 # CREATIONG EBS FROM EXISTING SNAPSHOT
 
 ![AWS Snapshot](screenshots/creating-ebs-from-snapshot-moving-the-snapshot-from-one-zone-to-another-or-region.png)
+![AWS Snapshot](screenshots/Screenshot 2026-08-02 224423.png)
+
