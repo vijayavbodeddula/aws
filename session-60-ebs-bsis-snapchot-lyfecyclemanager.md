@@ -277,6 +277,6 @@ EBS Volume
 
 ---
 
-# Screenshot
+# CREATIONG SNAPSHOT FROM EXISTING EBS
 
 ![AWS Snapshot](screenshots/snapchot.png)
