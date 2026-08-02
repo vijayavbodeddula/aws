@@ -281,7 +281,8 @@ EBS Volume
 
 ![AWS Snapshot](screenshots/snapchot.png)
 
-            1) provide the snapchat name
+ ```        1) provide the snapchat name
             2) description
             3) volume (from which ebs snapshot need to create)
             3) tags
+            ```
