@@ -12,3 +12,4 @@ cmds
 7) sudo umount /var/lib/jenkins
 8) sudo mount -a (as per the entries in the fstab files this cmd will 
                   remount the path with devices then we can confirm it works fine)
+9) journalctl -u jenkins
