@@ -298,5 +298,5 @@ EBS Volume
 
 # CREATING EBS FROM EXISTING SNAPSHOT OR MOVING TO ANOTHER REGION
 
-![AWS Snapshot](screenshots/creating _volume_from_snapshot.png)
+![AWS Snapshot](screenshots/creating_volume_from_snapshot.png)
 
