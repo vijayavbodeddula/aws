@@ -296,5 +296,5 @@ EBS Volume
 
 ---
 
-![AWS Snapshot](screenshots/creating-volume-from-snapshot.png)
+![AWS Snapshot](screenshots/creating _volume_from_snapshot.png)
 
