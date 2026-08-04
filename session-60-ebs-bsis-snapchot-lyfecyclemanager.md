@@ -290,11 +290,12 @@ EBS Volume
 
 ---
 
-# CREATIONG EBS FROM EXISTING SNAPSHOT
+# CREATIONG EBS FROM EXISTING SNAPSHOT options copy snapchot and create EBS from snapchot
 
 ![AWS Snapshot](screenshots/creating-ebs-from-snapshot-moving-the-snapshot-from-one-zone-to-another-or-region.png)
 
 ---
 
+# CREATIONG EBS FROM EXISTING SNAPSHOT
 ![AWS Snapshot](screenshots/creating _volume_from_snapshot.png)
 
