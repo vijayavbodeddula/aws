@@ -300,3 +300,10 @@ EBS Volume
 
 ![AWS Snapshot](screenshots/creating_volume_from_snapshot.png)
 
+---
+
+# EBS MOVING TO ANOTHER REGION
+![AWS Snapshot](screenshots/EBS_MOVING_TO_ANOTHER_REGION.png)
+###  first copy the snapchat to move data from one region to another region
+
+###  seocnd we have create a EBS from the copied snapshop from in new region 
