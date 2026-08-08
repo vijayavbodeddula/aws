@@ -27,7 +27,7 @@ what is EBS
         Data is not lost even if instance stops
     types:
         gp3/gp2 → General purpose
-        io1/io2 → High performance
+        io1/io2 →   High performance
         magnetic 
     root volume  (/dev/sdf)
     ------------
