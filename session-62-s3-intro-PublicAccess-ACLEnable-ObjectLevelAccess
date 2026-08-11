@@ -1,6 +1,15 @@
 simple storage service
 ----------------------
-
+s3 is storage storage service in aws. we can store any type of data like videos, images and audio 
+in the form of obects 
+benfits
+------
+    1) s3 is secure to store data (because we have policies to manage access who can access who can not access)
+    2) version control means we can maintain different versions for a single file
+    3) 
+"Why is S3 secure?"
+    "S3 provides multiple layers of security. We can control access using IAM policies
+    and bucket policies, prevent accidental public exposure using Block Public Access, encrypt data at rest using SSE-S3 or SSE-KMS and data in transit using HTTPS. We can also enable versioning and Object Lock to protect data from accidental deletion or modification, while CloudTrail provides auditing of API activity. So S3 security follows a defense-in-depth approach."
 1) Public access Enable
 2) ACL Enable  (At bucket Level)
 3) ACL need to enable object Level
