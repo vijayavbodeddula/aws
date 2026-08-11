@@ -2,8 +2,8 @@ simple storage service
 ----------------------
 s3 is storage storage service in aws. we can store any type of data like videos, images and audio 
 in the form of obects 
-benfits
-------
+benfits of s3
+------------
     1) s3 is secure to store data (because we have policies to manage access who can access who can not access)
     2) version control means we can maintain different versions for a single file
     3) s3 lifecycle
