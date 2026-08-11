@@ -1,0 +1,30 @@
+simple storage service
+----------------------
+1) Public access Enable
+2) ACL Enable  (At bucket Level)
+3) ACL need to enable object Level
+access can be provide to the object 
+
+policies will be written in the form of json format
+providing the public access for the object inside the bucket
+    {
+        "Version": "2012-10-17",
+        "Id": "PutObjPolicy",
+        "Statement": [
+            {
+                "Sid": "DenyObjectsThatAreNotSSEKMS",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::s3-flm-vijay/Azure_Administrator_Associate.pdf"
+            },
+            {
+                "Sid": "DenyObjectsThatAreNotSSEKMS1",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::s3-flm-vijay/cfffc84b-76d8-4033-be39-0438c4de6e6b.pdf"
+            }
+        ]
+    }
+
