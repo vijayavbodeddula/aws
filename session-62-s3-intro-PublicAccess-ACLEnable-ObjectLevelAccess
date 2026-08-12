@@ -1,3 +1,11 @@
+Agenda
+------
+0) s3 introduction
+1) Public access Enable
+2) ACL Enable  (At bucket Level)
+3) ACL need to enable object Level
+
+
 simple storage service
 ----------------------
     1) s3 is storage storage service in aws. we can store any type of data like videos, 
@@ -44,9 +52,7 @@ Why is S3 secure?
     Lock to protect data from accidental deletion or modification, while CloudTrail provides 
     auditing of API activity. So S3 security follows a defense-in-depth approach."
 
-1) Public access Enable
-2) ACL Enable  (At bucket Level)
-3) ACL need to enable object Level
+
 access can be provide to the object 
 
 policies will be written in the form of json format
