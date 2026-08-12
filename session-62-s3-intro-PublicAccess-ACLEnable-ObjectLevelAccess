@@ -5,7 +5,7 @@ simple storage service
         we can use the endpoint
     2) when we upload any object to s3 its having unique id ad URI
     3) s3 is global service we can access from any where
-
+    4) just creating a bucket billing will come billing happend based on the storage
 
 benfits of s3
 ------------
