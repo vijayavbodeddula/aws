@@ -22,6 +22,8 @@ use case
     3) static files like videos, images, audio and doc 
     4) use for storing the statefile
 
+Q) how many buckets we can create in one aws account
+ans) 100 it soft limit if we want more we have to create support ticker to aws 
 
 creation process
 ----------------
