@@ -1,13 +1,38 @@
 simple storage service
 ----------------------
-s3 is storage storage service in aws. we can store any type of data like videos, images and audio 
-in the form of obects 
+    1) s3 is storage storage service in aws. we can store any type of data like videos, 
+        images and audio in the form of obects and no need to mount to any service to access
+        we can use the endpoint
+    2) when we upload any object to s3 its having unique id ad URI
+    3) s3 is global service we can access from any where
+
+
 benfits of s3
 ------------
-    1) s3 is secure to store data (because we have policies to manage access who can access who can not access)
+    1) s3 is secure to store data (because we have policies to manage access who can access
+     who can not access)
     2) version control means we can maintain different versions for a single file
     3) s3 lifecycle
     4) 
+
+use case
+--------
+    1) used for storing the application logs
+    2) s3 is perfect to store backup
+    3) static files like videos, images, audio and doc 
+    4) use for storing the statefile
+
+
+creation process
+----------------
+    1) region (us-east-1)
+    2) bucket (unique name we have to give)
+
+    buckect permissions
+    -------------------
+        for object we can provide access in two ways 
+            1) ACLs (access control list)
+            2) bucket policy  (in json format we have to create)
 
 
 Why is S3 secure?
