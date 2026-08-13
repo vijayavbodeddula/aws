@@ -1,4 +1,4 @@
-# creating s3 bucket
+# 1) creating s3 bucket
 
 ![alt text](screenshots/image.png)
 
@@ -6,8 +6,8 @@
 ##### give bucket name 
 ##### give in which region it needs to create
 
-# providing accees to the bucket
-## disable public aceess before creating or after creting bucket
+# 2) providing accees to the bucket
+##### a) disable public aceess before creating or after creting bucket
 ![alt text](screenshots/image2.png)
-##### disable public aceess before creating or after creting bucket
+##### b) disable public aceess before creating or after creting bucket
 ![alt text](screenshots/image2.png)
