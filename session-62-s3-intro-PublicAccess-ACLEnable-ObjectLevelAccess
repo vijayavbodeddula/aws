@@ -42,8 +42,31 @@ creation process
     -------------------
         for object we can provide access in two ways 
             1) ACLs (access control list)
-            2) bucket policy  (in json format we have to create)
+                1. ACL — Access Control List
+                        An ACL is attached directly to a bucket or object and gives 
+                        basic permissions to specific AWS accounts or predefined groups.
+                Think:
 
+                ACL = permissions attached to the individual object/bucket.
+
+
+            2) bucket policy  (in json format we have to create)
+                A bucket policy is a JSON policy attached to the S3 bucket.
+                Think:
+                    Bucket Policy = one centralized set of rules controlling access to the
+                    bucket and its objects.
+
+Making bucket obects public
+---------------------------
+
+| ACL                                            | Bucket Policy                      |
+| ---------------------------------------------- | ---------------------------------- |
+| Older access-control mechanism                 | Recommended policy-based mechanism |
+| Attached to bucket/object                      | Attached to bucket                 |
+| Limited permissions                            | Very flexible                      |
+| Not written as normal IAM-style JSON policy    | Written in JSON                    |
+| Can control individual object ownership/access | Can control many objects centrally |
+| AWS generally recommends disabling ACLs        | Commonly used and recommended      |
 
 Why is S3 secure?
     "S3 provides multiple layers of security. We can control access using IAM policies
@@ -79,3 +102,10 @@ providing the public access for the object inside the bucket
         ]
     }
 
+
+
+Interview Question or doubts
+----------------------------
+    1)  can we provide access for user lets say i am having 10 developer
+        and for 1 developer required to access the one object can i mange this
+        case using ACL?
