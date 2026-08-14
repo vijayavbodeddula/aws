@@ -13,6 +13,29 @@ Why do we need a VPC?
     Security Groups
     Network ACLs
     Connectivity to other VPCs or on-premises networks
+                       Internet
+                            │
+                    Internet Gateway
+                            │
+                            ▼
+                    ┌──────────────┐
+                    │     VPC      │
+                    │ 10.0.0.0/16  │
+                    │              │
+                    │ Public Subnet│
+                    │      │       │
+                    │  LoadBalancer│
+                    │      │       │
+                    │      ▼       │
+                    │ Private      │
+                    │ Subnet       │
+                    │ App Server   │
+                    │      │       │
+                    │      ▼       │
+                    │ Private      │
+                    │ Subnet       │
+                    │ Database     │
+                    └──────────────┘
 Main components of VPC
 ----------------------
     VPC
