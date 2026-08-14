@@ -56,7 +56,7 @@ Main components of VPC
     │
     └── Network ACLs
 
-    
+
 Main VPC Components
 | Component                  | Simple definition                                                                                                                                               |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,3 +108,6 @@ QUESTIONS
 Q)      how many vpc and security groups we can create in one region 
 ans)    5 vpc's  in a region
         2500 sg's in a region
+
+q)   how many IGW's we can attach to one VPC
+ans) only 1 we can attach
