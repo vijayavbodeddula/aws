@@ -59,7 +59,7 @@ Main components of VPC
 Inside a VPC, we divide the network into smaller networks called subnets. Subnets are mainly classified as
     1)  public subnets
     2) private subnets.
-    
+
     A public subnet is a subnet whose route table has a route to an Internet Gateway. Resources such as public-facing load balancers or web servers can be placed in a public subnet.
 
     A private subnet does not have a direct route to an Internet Gateway. Resources such as application servers and databases are generally placed in private subnets for better security.
@@ -67,6 +67,23 @@ Inside a VPC, we divide the network into smaller networks called subnets. Subnet
     If resources in a private subnet need outbound internet access, for example to download software updates, we can use a NAT Gateway placed in a public subnet.
 
     We use route tables to control where network traffic is directed, Security Groups to control traffic at the resource level, and Network ACLs to control traffic at the subnet level.
+
+
+
+
+
+
+
+
+
+
+LAN, MAN, and WAN are types of networks classified mainly by the geographical area they cover.
+| Type    | Full form                 | Coverage                | Example                                    |
+| ------- | ------------------------- | ----------------------- | ------------------------------------------ |
+| **LAN** | Local Area Network        | Small area              | Home, office, building                     |
+| **MAN** | Metropolitan Area Network | City/metropolitan area  | Network connecting offices across a city   |
+| **WAN** | Wide Area Network         | Large geographical area | Internet, company network across countries |
+
 QUESTIONS
 ----------
 Q)      how many vpc and security groups we can create in one region 
