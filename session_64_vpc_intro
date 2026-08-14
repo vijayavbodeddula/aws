@@ -105,9 +105,12 @@ LAN, MAN, and WAN are types of networks classified mainly by the geographical ar
 
 QUESTIONS
 ----------
-Q)      how many vpc and security groups we can create in one region 
-ans)    5 vpc's  in a region
-        2500 sg's in a region
+Q)   how many vpc and security groups we can create in one region 
+ans) 5 vpc's  in a region
+     2500 sg's in a region
 
 q)   how many IGW's we can attach to one VPC
 ans) only 1 we can attach
+
+Q)   can we delete the vpc and igw when there is services in vpc
+ans) no
