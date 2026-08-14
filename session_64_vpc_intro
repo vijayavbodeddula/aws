@@ -88,6 +88,7 @@ Inside a VPC, we divide the network into smaller networks called subnets. Subnet
     We use route tables to control where network traffic is directed, Security Groups to control traffic at the resource level, and Network ACLs to control traffic at the subnet level.
 
 
+by default we have one VPC and inside we have subnets which are public by default
 
 
 
