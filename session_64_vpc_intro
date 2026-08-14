@@ -56,6 +56,8 @@ Main components of VPC
     │
     └── Network ACLs
 
+    
+Main VPC Components
 | Component                  | Simple definition                                                                                                                                               |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **VPC**                    | A logically isolated virtual network in AWS where we launch resources.                                                                                          |
