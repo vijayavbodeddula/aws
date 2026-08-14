@@ -56,6 +56,23 @@ Main components of VPC
     │
     └── Network ACLs
 
+| Component                  | Simple definition                                                                                                                                               |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **VPC**                    | A logically isolated virtual network in AWS where we launch resources.                                                                                          |
+| **CIDR Block**             | Defines the IP address range available inside the VPC. Example: `10.0.0.0/16`.                                                                                  |
+| **Subnet**                 | A smaller network created by dividing the VPC's IP address range. A subnet belongs to **one Availability Zone**.                                                |
+| **Public Subnet**          | A subnet whose route table has a route to an **Internet Gateway**. Resources also need appropriate public addressing/security to communicate with the internet. |
+| **Private Subnet**         | A subnet without a direct route to an Internet Gateway. It can use a **NAT Gateway** for outbound internet access.                                              |
+| **Route Table**            | Contains routing rules that determine **where network traffic should go**.                                                                                      |
+| **Internet Gateway (IGW)** | A VPC component that enables communication between the VPC and the internet when routing and addressing allow it.                                               |
+| **NAT Gateway**            | Allows resources in a private subnet to initiate **outbound internet connections** without allowing unsolicited inbound internet connections through the NAT.   |
+| **Security Group (SG)**    | A **stateful** virtual firewall attached to resources/network interfaces. It controls inbound and outbound traffic.                                             |
+| **Network ACL (NACL)**     | A **stateless** firewall associated with a subnet. It controls inbound and outbound traffic and supports both allow and deny rules.                             |
+| **Elastic IP (EIP)**       | A static public IPv4 address. For example, a public NAT Gateway uses an Elastic IP.                                                                             |
+| **VPC Peering**            | Provides private network connectivity between two VPCs.                                                                                                         |
+| **VPC Endpoint**           | Allows private access from a VPC to supported AWS services without requiring traffic to go through the public internet.                                         |
+
+
 Inside a VPC, we divide the network into smaller networks called subnets. Subnets are mainly classified as
     1)  public subnets
     2) private subnets.
