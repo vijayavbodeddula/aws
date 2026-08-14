@@ -6,13 +6,13 @@ What is a VPC in AWS?
 Why do we need a VPC?
     The main purpose is network isolation and control.
     You control things such as:
-    IP address ranges
-    Subnets
-    Routing
-    Internet access
-    Security Groups
-    Network ACLs
-    Connectivity to other VPCs or on-premises networks
+        IP address ranges
+        Subnets
+        Routing
+        Internet access
+        Security Groups
+        Network ACLs
+        Connectivity to other VPCs or on-premises networks
                        Internet
                             │
                     Internet Gateway
