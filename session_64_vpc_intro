@@ -1,0 +1,22 @@
+What is a VPC in AWS?
+VPC = Virtual Private Cloud.
+A VPC is a logically isolated virtual network inside AWS where
+you can launch AWS resources such as EC2 instances, databases, load balancers, etc.
+
+VPC
+│
+├── CIDR
+│
+├── Subnets
+│    ├── Public
+│    └── Private
+│
+├── Route Tables
+│
+├── Internet Gateway
+│
+├── NAT Gateway
+│
+├── Security Groups
+│
+└── Network ACLs
