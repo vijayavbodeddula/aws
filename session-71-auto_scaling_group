@@ -1,1 +1,5 @@
+auto-scaling group
+-----------------
+
 An ASG automatically manages a group of EC2 instances. Its main job is to make sure you have the required number of EC2 instances running, and it can automatically add or remove instances based on demand.
+
