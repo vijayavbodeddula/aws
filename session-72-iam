@@ -3,3 +3,10 @@ IAM
 IAM stands for Identity and Access Management.
 In simple terms, IAM controls:
     Who can access AWS, and what they are allowed to do.
+
+    | Component      | Simple meaning                                  | Example               |
+    | -------------- | ----------------------------------------------- | --------------------- |
+    | **IAM User**   | Individual identity                             | Vijay                 |
+    | **IAM Group**  | Collection of users                             | DevOps-Team           |
+    | **IAM Policy** | Defines permissions                             | Allow EC2 read access |
+    | **IAM Role**   | Temporary permissions assumed by a user/service | EC2 accessing S3      |
