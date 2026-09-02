@@ -1,0 +1,5 @@
+IAM
+---
+IAM stands for Identity and Access Management.
+In simple terms, IAM controls:
+    Who can access AWS, and what they are allowed to do.
