@@ -10,3 +10,5 @@ In simple terms, IAM controls:
     | **IAM Group**  | Collection of users                             | DevOps-Team           |
     | **IAM Policy** | Defines permissions                             | Allow EC2 read access |
     | **IAM Role**   | Temporary permissions assumed by a user/service | EC2 accessing S3      |
+
+IAM IS used to provide authentication and autherization for aws resoueces and users
