@@ -1,8 +1,7 @@
 IAM
 ---
-IAM stands for Identity and Access Management.
-In simple terms, IAM controls:
-    Who can access AWS, and what they are allowed to do.
+IAM stands for Identity and Access Management. It is a global AWS service used to securely control authentication and authorization to AWS resources. IAM allows us to manage users, groups, roles, and policies. We use policies to define what actions an identity can perform on which resources. For applications and AWS services, we generally prefer IAM roles with temporary credentials instead of hardcoded access keys. IAM follows the principle of least privilege, and an explicit Deny always overrides an Allow.
+
 
     | Component      | Simple meaning                                  | Example               |
     | -------------- | ----------------------------------------------- | --------------------- |
@@ -12,3 +11,24 @@ In simple terms, IAM controls:
     | **IAM Role**   | Temporary permissions assumed by a user/service | EC2 accessing S3      |
 
 IAM IS used to provide authentication and autherization for aws resoueces and users
+
+policies are two types
+---------------------
+1) based on manage
+    a) aws managed     --> the policies which are managed by aws we call it as aws managed policies
+    b) cutomer managed --> the polices which are managed by user call it as cutomer managed policy
+    c) inline policy   --> the policy which we are embeded directly into the role, user, or group
+2) based on functionalty
+    a) trust policy      -->  this policy is defined for who can assume this role?  (inbound)
+    b) permission policy -->  this policy is used for what can do (outbound)
+
+
+IAM Role has TWO important policies
+-----------------------------------
+                 IAM ROLE
+                    │
+          ┌─────────┴─────────┐
+          │                   │
+    Trust Policy       Permission Policy
+          │                   │
+    WHO can assume?      WHAT can do?
