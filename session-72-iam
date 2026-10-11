@@ -39,7 +39,7 @@ policies
 
 An IAM policy is a document that defines what actions are allowed or denied on which AWS resources.
                                         or
-policies are nothing but a permissions here we can define what actions a role can perform in the form of JSON.
+policies are nothing but a permissions here we can define what actions a role can perform or who can access in the form of JSON.
 
         In simple words, a policy tells AWS:
             WHO needs access (the identity or principal involved)
