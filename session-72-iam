@@ -65,3 +65,5 @@ An IAM policy is a document that defines what actions are allowed or denied on w
                 ]
             }
 
+        Note:  you cannot use the trust policy to grant S3 access by adding the S3 bucket ARN to Resource. Trust policies and permission policies have different purposes.
+
