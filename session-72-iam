@@ -58,11 +58,10 @@ An IAM policy is a document that defines what actions are allowed or denied on w
             "Statement": 
             {
                 "Effect": "allow"
-                "Action": "s3:GetObject"
-                "Principle":
+                "Action": "sts:AssumeRole"
+                "Principal":
                 [
                     arn
                 ]
-                "Resource": "arn:aws:s3:::my-company-bucket/*"
             }
 
