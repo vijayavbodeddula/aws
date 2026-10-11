@@ -71,3 +71,29 @@ policies are nothing but a permissions here we can define what actions a role ca
 
         Note:  you cannot use the trust policy to grant S3 access by adding the S3 bucket ARN to Resource. Trust policies and permission policies have different purposes.
 
+users:
+    An IAM User is an identity in AWS that represents a person or an application that needs to access AWS resources.
+    for users we can provide two types permissions
+        1) programatic access --> means the user can perform the acctions on resource using cli, api sdk 
+                                  here we are getting access key and secrete through user can conect
+        2) console access    --> through user can able to login into aws account direct and can perform actions
+                                 using user-name and password
+        while creating user's we can attch policies 
+            1)  existing policy we can add ( customer policy or aws managed policy )
+            2)  inline policy
+roles
+-----
+    these are used for providing access to the aws resources
+    same how we are creating a user this will be created
+    while creating user's we can attch policies 
+            1)  existing policy we can add ( customer policy or aws managed policy )
+            2)  inline policy
+
+IAM Groups
+----------
+        Purpose: Groups help manage permissions for multiple IAM users together.
+        Your notes, corrected:
+            Create groups such as DevOps, Developers, and Testing.
+            Add IAM users to the appropriate group.
+            Attach policies to the group instead of assigning the same policy individually to every user.
+            Users inherit the permissions granted through their group memberships.
